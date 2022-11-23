@@ -1,7 +1,7 @@
 # Project-RCBCA
 This repo is to develop a **website** for our department
 
-************IMPORTANT RULES YOU SHOULD FOLLOW**************
+************IMPORTANT RULES YOU SHOULD FOLLOW************
 
 1. Always *create a new branch* when you are making changes to the files. A short, descriptive branch name enables your collaborators to see ongoing work at a glance. For example, 'dev-section-frontend' or 'file-tranfer-backend' etc. Your branch is a safe place to make changes. If you make a mistake, you can revert your changes or push additional changes to fix the mistake. Your changes will not end up on the default branch until you merge your branch.
 
