@@ -12,21 +12,45 @@
   --l-blue-2: #b7c3ff;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
 .top-nav {
   padding: 10px;
-  background-color: #cdfcf6;
+  background-color: #4a8ffe;
   height: 60px;
+  /* width: 100%; */
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .topnav-left {
-  margin-top: auto;
-  margin-bottom: auto;
+  color: var(--white);
+  margin-block: auto;
 }
 
 .topnav-right input {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin-right: 15px;
 }
 
@@ -40,6 +64,8 @@
 /* -----------------hero-start---------------- */
 
 .hero {
+  width: 100%;
+  /* position: absolute; */
   display: flex;
   box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.377);
 }
@@ -47,26 +73,26 @@
 /* -------------------side nav --------------*/
 
 .side-nav {
-  position: relative;
+  position: absolute;
   width: 120px;
   background-color: var(--white);
 }
 
 .side-nav img {
+  top: 40px;
   min-width: 40px;
   height: 40px;
   cursor: pointer;
 }
 
 .side-nav a {
-  height: 50px;
+  left: 40px;
   margin: 40px 40px;
-  position: relative;
   display: flex;
+  text-decoration: none;
 }
 
 .side-nav .title {
-  position: relative;
   font-size: 14px;
   margin: 6px 0 0 90px;
   box-shadow: -4px 0px 25px rgba(0, 0, 0, 0.603);
@@ -76,6 +102,7 @@
   color: var(--black);
   background-color: var(--white);
   opacity: 0;
+  z-index: 1;
   visibility: hidden;
   transition: 0.5s;
 }
@@ -84,11 +111,14 @@
   visibility: visible;
   opacity: 1;
   margin: 6px 0 0 50px;
+  z-index: 1;
 }
 
 /* ----------side nav finish--------*/
 
 .hero-text {
+  position: relative;
+  left: 120px;
   width: 40vw;
   /* background-color:var(--l-blue-1); */
   background: linear-gradient(90deg, #6b80e9 0%, #798dee 59.22%, #98a8f8 100%);
@@ -97,14 +127,14 @@
 
 .hero-text h1 {
   color: var(--white);
-  padding: 50px;
+  padding: 30px;
   margin-top: 35%;
   font-weight: 500;
 }
 
 .hero-text h2 {
   color: var(--white);
-  padding: 50px;
+  padding: 30px;
   margin-bottom: 35%;
 }
 .hero-pic {
@@ -116,41 +146,48 @@
 /* -------------------------hero-finish---------------- */
 
 hr {
-  margin: 60px 20px 50px 90px;
+  margin: 60px 20px 40px 90px;
 }
 
-/* ----------NEWS SECTION heading & update button------------ */
+/* ----------NEWS SECTION heading &update-button------------ */
 
 .news-update {
   display: flex;
   justify-content: space-between;
-  /* margin: 20px 145px; */
-  margin: 0 90px 20px 0;
+  /* margin: 0 90px 20px 145px; */
 }
 
 .heading {
   font-size: 42px;
   color: var(--black);
-  margin: 0 0 20px 145px;
+  margin: 0 90px 20px 145px;
 }
 
 .button {
+  position: relative;
+  right: 90px;
+  display: flex;
   background-color: var(--l-blue-1);
   color: var(--white);
   font-size: 16px;
-  max-height: 54px;
-  width: 120px;
+  max-height: 50px;
   padding: 16px;
   border: none;
   outline: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
+  letter-spacing: 1px;
 }
 
 .button:hover {
-  letter-spacing: 1px;
   box-shadow: -4px 0px 25px rgba(5, 6, 56, 0.491);
+}
+
+.button img {
+  width: 168x;
+  height: 18px;
+  filter: invert(1);
 }
 
 /* -----------------News and Events body------------- */
@@ -163,7 +200,8 @@ section {
   border-radius: 15px;
 }
 .news-box {
-  padding: 60px;
+  padding: 20px 60px 60px 60px;
+  /* padding: 20px 60px; */
 }
 
 section h3 {
@@ -203,4 +241,170 @@ section h3 {
   position: absolute;
   border: 2px dashed var(--black);
   border-radius: 5px;
+}
+
+/* -------------media quaries------------- */
+
+@media screen and (max-width: 991px) {
+  .top-nav {
+    background-color: #000;
+  }
+
+  .side-nav {
+    display: none;
+  }
+
+  .hero-text {
+    position: relative;
+    left: 0;
+  }
+
+  .heading {
+    margin: 0 40px 20px 80px;
+  }
+
+  section {
+    margin: 0 0 50px 40px;
+  }
+
+  .routine-right-top {
+    padding: 10%;
+  }
+}
+/* -----------large mobile ---------*/
+
+@media screen and (max-width: 767px) {
+  .top-nav {
+    background-color: blueviolet;
+    padding: 5px;
+    height: 45px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  h5 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  hr {
+    margin: 50px 20px 30px 40px;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin: 0 0px 20px 40px;
+  }
+
+  .button {
+    right: 25px;
+  }
+
+  .news-box {
+    padding: 10px 20px 40px 35px;
+  }
+
+  .routine-box {
+    flex-direction: column;
+  }
+
+  .routine-image {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .routine-right {
+    display: flex;
+    width: 100%;
+    /* height: 250px; */
+  }
+
+  .routine-right-top {
+    padding: 3%;
+    border-radius: 0px 0px 0px 15px;
+    width: 60%;
+  }
+
+  .routine-change {
+    width: 40%;
+    border-radius: 0px 0px 15px 0px;
+  }
+
+  /* .change-icon {
+    box-sizing: border-box;
+    position: absolute;
+  } */
+}
+/* =========small mobile----------------------- */
+
+@media screen and (max-width: 479px) {
+  .top-nav {
+    background-color: violet;
+  }
+
+  .topnav-right input {
+    margin-right: 5px;
+  }
+
+  .news-update {
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 0 10px 0 10px;
+  }
+
+  .heading {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .button {
+    text-align: center;
+    margin-inline: auto;
+    width: 40vw;
+    padding: 14px;
+    right: 0px;
+  }
+
+  section {
+    margin: 0 0 50px 20px;
+  }
+
+  .routine-right {
+    display: block;
+  }
+
+  .routine-right-top {
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .routine-change {
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+  }
 }
