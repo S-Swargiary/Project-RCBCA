@@ -126,7 +126,7 @@ p {
 
 .hero-text {
   /* width: 40vw; */
-  max-width: 300px;
+  min-width: 300px;
   /* background-color:var(--l-blue-1); */
   background: linear-gradient(90deg, #6b80e9 0%, #798dee 59.22%, #98a8f8 100%);
   text-align: center;
@@ -147,12 +147,14 @@ p {
   background: linear-gradient(90deg, #b7c3ff 100%, #bbc6ff 81.69%, #ced6ff 0%);
   /* width: 100%; */
   padding-inline: 1%;
+  
 }
 
 .hero-pic img {
-  width: 100%;
+  /* width: 100%; */
+width: auto;
   margin-block: 10px;
-  /* height: 580px; */
+  height: 580px;
 }
 
 /* -------------------------hero-finish-------------------- */
