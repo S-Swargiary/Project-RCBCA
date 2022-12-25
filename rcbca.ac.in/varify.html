@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RC SIGN UP</title>
+    <LINK REL="stylesheet" href="sign_up.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1>Verify ID</h1>
+            
+            <div class="Button-box ">          
+                <div id="btn"></div>
+                <button type="button" class="sld-btn" onclick="student()">Student</button>
+                <button type="button" class="sld-btn" onclick="teacher()">Teacher</button>
+            </div>
+            <div class="Error">
+                <h2>Error message</h2>
+            </div>
+            <form id="student" class="input_box">
+                <input type="text" class="input" placeholder="Email " required>
+                <input type="text" class="input" placeholder="Registration no" required>
+                <button type="submit" class="SIGN">SenD OTP</button>
+            </form>
+            <form id= "teacher"class="input_box">
+                <input type="text" class="input" placeholder="Email " required>
+                <input type="text" class="input" placeholder="Phone no" required>
+                <button type="submit" class="SIGN">Send OTP</button>
+            </form> 
+        </div>
+        
+     </div>
+      
+     <script>
+        var x = document.getElementById("student");
+        var y = document.getElementById("teacher");   
+        var s = document.getElementById("btn");
+
+        function student(){
+            x.style.left = "-400px";
+            y.style.left= "50px";
+            s.style.left = "110px";
+        }
+
+        function teacher(){
+            x.style.left = "60px";
+            y.style.left= "450px";
+            s.style.left = "0";
+        }
+    </script>   
+    </body>
+</html> 
