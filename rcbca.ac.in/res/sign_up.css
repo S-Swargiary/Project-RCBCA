@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-size-adjust: relative;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+	
+	background: linear-gradient(24deg, rgba(50,83,245,0.9612219887955182) 25%, rgba(162,57,222,0.9528186274509804) 100%);
+    overflow: hidden;
+}
+body::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('https://st3.depositphotos.com/2807103/13149/i/450/depositphotos_131492130-stock-photo-abstract-black-and-dark-texture.jpg')
+	repeat center;
+	mix-blend-mode: soft-light ;
+	z-index: -1;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+     
+
+}
+
+
+.form_box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: linear-gradient(24deg, rgba(173, 230, 156, 0.961) 25%, rgba(219, 214, 221, 0.953) 100%);;
+    padding: 5px;
+    overflow: hidden;
+    
+
+}
+.form_box h1{
+    font-size: 20px;
+    top: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+}
+
+.Button-box{
+    width: 220px;
+    height: 40px;
+    position: relative;
+    margin:35px  auto ;
+    position: relative; 
+    
+    border-radius: 30px;
+}
+
+
+
+.sld-btn{
+    top: 20px;
+    padding: 10px 30px;   
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    
+     
+
+}
+#btn{
+    top: 20px;
+    left: 0;
+    position: absolute;
+    width: 110px; 
+    height: 100%;
+    background: linear-gradient(to right, #32baf0, #a60aee);
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.Error h2{
+    font-size: 20px;
+    color: rgb(235, 12, 12);
+    text-align: center;
+}
+
+.input_box{
+    top: 180px;
+    position: absolute;
+    width: 240px;
+    transition: .5s;
+}
+
+.input{
+    width: 100% ;
+    padding: 10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-right:0;
+    border-top:0;
+    border-bottom:1px solid #999;
+    outline: none;
+    background: transparent;
+ 
+}
+ 
+.SIGN{
+    width: 85%  ;
+    top: 400px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: NONE;
+    background: linear-gradient(to right, #14a8ec, #a60aee);;
+    border-radius: 30px;
+    align-self: center;
+} 
+
+#student{
+    left: 90px ;
+}
+#teacher{
+    left: 400px;
+}
