@@ -18,8 +18,8 @@ body{
 }
 .container{
     width: 580px;
-    align-self: center;
-
+    
+    height: 800px;
 }
 
 
@@ -28,8 +28,8 @@ body{
     height: 550px;
     position: relative;
     right: 5%;
-    top: 50%;
-    margin: 6% auto;
+    top: -20%;
+    margin: 44% auto;
     background: linear-gradient(24deg, rgba(173, 230, 156, 0.961) 25%, rgba(219, 214, 221, 0.953) 100%);;
     padding: 5px;
     overflow: hidden;
@@ -132,5 +132,94 @@ body{
     left: 600px;
 }
 
+.container .OTP-BOX{
+   background-color: rgba(255, 255, 255, 0.3); 
+   border-radius: 10px;
+   padding: 30px;
+   max-width: 1000px;
+   text-align: center;
+   display: flex;
+   height: 310px;
+   width: 500px;
+   align-self: center;
+   margin: 6% auto;
+   margin-top: -100px;
+   flex-direction: column;
+   flex-wrap: wrap;
 
+
+}
+
+.code{
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.COD{
+    caret-color: transparent;
+    background-color: rgb(240, 248, 255);
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 36px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+     
+}
+
+@media( max-width: 600px){
+    .code{
+        flex-wrap: wrap;
+    }
+
+    .COD{
+        font-size: 24px;
+        height: 50px;
+        max-width: 50px;
+        font-size: bold;
+    }
+}
+
+.COD::-webkit-outer-spin-button,
+.COD::-webkit-inner-spin-button {
+    -webkit-appearance: none;   
+
+}
+
+.COD:valid{
+    border-color: #9861c2;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25);
+}
+
+.btn1{
+    font-family: sans-serif;
+    min-width: 170px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    margin: 0px 0px 20px 0px;
+    padding: 0.775px 0.75px;
+    border-radius: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.7;
+}
+
+.btn-primary{
+    color:#eee;
+    background-color: #9861c2;
+    border-color: #9861c2;
+
+}
 
