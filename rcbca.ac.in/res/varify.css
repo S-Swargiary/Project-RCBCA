@@ -18,12 +18,13 @@ body{
 }
 .container{
     width: 580px;
+    overflow: hidden;
     
     height: 800px;
 }
 
 
-.form_box{
+.container .form_box{
     width: 460px;
     height: 550px;
     position: relative;
@@ -119,7 +120,7 @@ body{
     display: block;
     margin-top: 10%;
     margin-inline: 20%;
-    background: linear-gradient(to right, #14a8ec, #a60aee);;
+    background: linear-gradient(to right, #14a8ec, #a60aee);
     border-radius: 30px;
     
     align-items: center;
@@ -133,19 +134,23 @@ body{
 }
 
 .container .OTP-BOX{
-   background-color: rgba(255, 255, 255, 0.3); 
+  
+   background: linear-gradient(to right, #89d5f8, #cfa7e2);
    border-radius: 10px;
    padding: 30px;
    max-width: 1000px;
    text-align: center;
    display: flex;
-   height: 310px;
-   width: 500px;
-   align-self: center;
+   height: 380px;
+   width: 402px;
+   
    margin: 6% auto;
-   margin-top: -100px;
+   margin-top:-945px;
+   margin-right: 88px;
+   justify-content: space-around;
    flex-direction: column;
    flex-wrap: wrap;
+   position: relative;
 
 
 }
@@ -160,9 +165,9 @@ body{
 
 .COD{
     caret-color: transparent;
-    background-color: rgb(240, 248, 255);
+    background-color: rgb(226, 226, 226);
     border-radius: 10px;
-    border: 1px solid #eee;
+    border: 1px solid rgb(255, 255, 255);
     font-size: 30px;
     font-family: sans-serif;
     width: 36px;
