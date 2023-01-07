@@ -6,7 +6,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="form_box">
+
+        <!--First sign in form-->
+        <div id="formx" class="form_box">
             <h1>Verify ID</h1>
             
             <div class="Button-box ">          
@@ -14,22 +16,25 @@
                 <button type="button" class="sld-btn" onclick="student() ">  Student</button>
                 <button type="button" class="sld-btn" onclick="teacher()">Teacher</button>
             </div>
-
+            
+            <!-- Student First sign in form-->
             <form id="student" class="input_box" style ="left: 85px">
                 <input type="text" class="input" placeholder="Email " required>
                 <input type="text" class="input" placeholder="Registration no" required>
-                <button type="submit" class="SIGN">Send OTP</button>
+                <button id="bt-sub1" type="submit" class="SIGN">Send OTP</button>
             </form>
-
+            
+            <!--TEACHER First sign in form-->
             <form id= "teacher"class="input_box">
                 <input type="text" class="input" placeholder="Email " required>
                 <input type="text" class="input" placeholder="Phone no" required>
-                <button type="submit" class="SIGN">Send OTP</button>
+                <button id="bt-sub2" type="submit" class="SIGN">Send OTP</button>
             </form> 
             
         </div>
 
-        <div class="OTP-BOX">
+        <!--OTP form-->
+        <div id="otpx" class="OTP-BOX">
             <H2>Vrify OTP</H2>
             <P>
                 We emailed you a six digit code to your provided email <br/>
@@ -53,28 +58,83 @@
             <small>
                 If you didn't receive a code !! <strong>Resend</strong>
             </small>
-
-            
-        
         </div>
-     </div>
-      
-     <script>
-        var x = document.getElementById("student");
-        var y = document.getElementById("teacher");   
-        var s = document.getElementById("btn");
 
-        function teacher(){
-            x.style.left = "-500px";
-            y.style.left= "85px";
-            s.style.left = "150px";
-        }
+        <div id="2nd-otp" class="sndOTP-BOX">
+            <H2>Vrify OTP</H2>
+            
+            <H4>OTP send to your mobile</H4>
+            <div class="fstCode">
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+            </div>
 
-        function student() {
-            x.style.left = "85px";
-            y.style.left= "600px";
-            s.style.left = "10px";
-        }
-    </script>   
+            <H4>OTP send to your email</H4>
+            <div class="fstCode">
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+                <input type="number" class="COD1" placeholder="0" min="0" max="9" required>
+            </div>
+
+
+            <div>
+                <button type="button" class="btn12 btn-primary">Verify</button>
+
+            </div>
+
+            <small>
+                If you didn't receive a code !! <strong>Resend</strong>
+            </small>
+        </div>
+
+        
+
+        
+        
+    </div>
+
+        <!--Functionality-->
+        <script>
+            var x = document.getElementById("student");
+            var y = document.getElementById("teacher");   
+            var s = document.getElementById("btn");
+
+            function teacher(){
+                x.style.left = "-500px";
+                y.style.left= "85px";
+                s.style.left = "150px";
+            }
+
+            function student() {
+                x.style.left = "85px";
+                y.style.left= "600px";
+                s.style.left = "10px";
+            }
+
+            document.getElementById("bt-sub1").onclick = function() {
+                document.getElementById("formx").style.display = "none";
+                
+                element = document.querySelector('.OTP-BOX');
+                element.style.visibility = 'visible';
+                
+            }
+
+            document.getElementById("bt-sub2").onclick = function() {
+                document.getElementById("formx").style.display = "none";
+                
+                element = document.querySelector('.sndOTP-BOX');
+                element.style.visibility = 'visible';
+                
+            }
+    
+        </script> 
+    
     </body>
 </html> 
