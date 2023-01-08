@@ -50,7 +50,7 @@
                 <input type="number" class="COD" placeholder="0" min="0" max="9" required>
             </div>
 
-            <div>
+            <div class="otp-btn">
                 <button type="button" class="btn1 btn-primary">Verify</button>
 
             </div>
@@ -95,9 +95,18 @@
             </small>
         </div>
 
-        
-
-        
+        <div id="chng-pass" class="REST_PASS">
+            <h1>Verify ID</h1>
+            
+            <!-- Student First sign in form-->
+            <form id="PASS" class="input_box-PA" style ="left: 85px">
+                <input type="text" class="input-PA" placeholder="Enter Password " required>
+                <input type="text" class="input" placeholder="Confirm Password" required>
+                <button id="bt-sub1" type="submit" class="RESET">Save</button>
+            </form>
+            
+    
+        </div>     
         
     </div>
 
@@ -130,7 +139,7 @@
             document.getElementById("bt-sub2").onclick = function() {
                 document.getElementById("formx").style.display = "none";
                 
-                element = document.querySelector('.sndOTP-BOX');
+                element = document.querySelector('.scndOTP-BOX');
                 element.style.visibility = 'visible';
                 
             }
