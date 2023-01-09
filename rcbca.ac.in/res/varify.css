@@ -4,6 +4,7 @@
     text-size-adjust: relative;
 }
 
+/* MAIN BODY*/
 body{
     background: linear-gradient(24deg, rgba(50,83,245,0.9612219887955182) 25%, rgba(162,57,222,0.9528186274509804) 100%);
     font-family: "Lato", sans-serif;
@@ -16,20 +17,23 @@ body{
 
     margin: 0;
 }
+
+/* container for all forms */
 .container{
     width: 580px;
-    align-self: center;
-
+    
+    
+    height: 800px;
 }
 
-
-.form_box{
+/* sign in form */
+.container .form_box{
     width: 460px;
     height: 550px;
     position: relative;
     right: 5%;
-    top: 50%;
-    margin: 6% auto;
+    top: -20%;
+    margin: 44% auto;
     background: linear-gradient(24deg, rgba(173, 230, 156, 0.961) 25%, rgba(219, 214, 221, 0.953) 100%);;
     padding: 5px;
     overflow: hidden;
@@ -119,7 +123,7 @@ body{
     display: block;
     margin-top: 10%;
     margin-inline: 20%;
-    background: linear-gradient(to right, #14a8ec, #a60aee);;
+    background: linear-gradient(to right, #14a8ec, #a60aee);
     border-radius: 30px;
     
     align-items: center;
@@ -133,4 +137,265 @@ body{
 }
 
 
+/*Student OTP BOX DESIGN */
+.OTP-BOX{
+  
+   background: linear-gradient(to right, #89d5f8, #cfa7e2);
+   border-radius: 40px;
+   padding: 30px;
+   max-width: 1000px;
+   text-align: center;
+   display: flex;
+   height: 420px;
+   width: 395px;
+   
+   margin: 6% auto;
+   margin-top:120px;
+   margin-right: 98px;
+   justify-content: space-around;
+   flex-direction: column;
+   flex-wrap: wrap;
+   position: relative;
+   visibility: hidden;
 
+
+}
+
+.code{
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.COD{
+    caret-color: transparent;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 36px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+     
+}
+
+@media( max-width: 600px){
+    .code{
+        flex-wrap: wrap;
+    }
+
+    .COD{
+        font-size: 24px;
+        height: 50px;
+        max-width: 50px;
+        font-size: bold;
+    }
+}
+
+.COD::-webkit-outer-spin-button,
+.COD::-webkit-inner-spin-button {
+    -webkit-appearance: none;   
+
+}
+
+.COD:valid{
+    border-color: #9861c2;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25);
+}
+
+
+.btn1{
+    font-family: sans-serif;
+    min-width: 170px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    margin: 0px 0px 20px 0px;
+    padding: 0.775px 0.75px;
+    border-radius: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.7;
+}
+
+.btn-primary{
+    color:#eee;
+    background-color: #9861c2;
+    border-color: #9861c2;
+
+}
+
+
+/*TEACHER OTP BOX DESIGN */
+
+.scndOTP-BOX{
+  
+    background: linear-gradient(to right, #89d5f8, #cfa7e2);
+    border-radius: 40px;
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center;
+    display: flex;
+    height: 420px;
+    width: 395px;
+    
+    margin: 6% auto;
+    margin-top: -500px;
+    margin-right: 98px;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    visibility: hidden;
+ 
+ 
+ }
+ 
+ .fstcode{
+     top: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 40px 0;
+ }
+ 
+ .COD1{
+     caret-color: transparent;
+     background-color: rgb(226, 226, 226);
+     border-radius: 10px;
+     border: 1px solid rgb(255, 255, 255);
+     font-size: 30px;
+     font-family: sans-serif;
+     width: 36px;
+     height: 40px;
+     margin: 10px;
+     text-align: center;
+     font-weight: 300;
+      
+ }
+ 
+ @media( max-width: 600px){
+     .fstcode{
+         flex-wrap: wrap;
+     }
+ 
+     .COD1{
+         font-size: 24px;
+         height: 50px;
+         max-width: 50px;
+         font-size: bold;
+     }
+ }
+ 
+ .COD1::-webkit-outer-spin-button,
+ .COD1::-webkit-inner-spin-button {
+     -webkit-appearance: none;   
+ 
+ }
+ 
+ .COD1:valid{
+     border-color: #9861c2;
+     box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25);
+ }
+ 
+ .btn12{
+     font-family: sans-serif;
+     min-width: 170px;
+     
+     text-align: center;
+     text-transform: uppercase;
+     white-space: nowrap;
+     vertical-align: middle;
+     user-select: none;
+     cursor: pointer;
+     font-size: 1rem;
+     border: 1px solid transparent;
+     margin: 0px 0px 20px 0px;
+     padding: 0.775px 0.75px;
+     border-radius: 10px;
+     line-height: 1.5;
+     letter-spacing: 0.7;
+ }
+ 
+ .btn-primary{
+     color:#eee;
+     background-color: #9861c2;
+     border-color: #9861c2;
+ 
+ }
+
+ /*Password reset form*/
+ .REST_PASS{
+    width: 460px;
+    height: 550px;
+    position: relative;
+    right: 5%;
+    top: -20%;
+    margin: 44% auto;
+    background: linear-gradient(24deg, rgba(173, 230, 156, 0.961) 25%, rgba(219, 214, 221, 0.953) 100%);;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10%;
+    visibility: hidden;
+
+}
+.REST_PASS h1{
+    
+    font-size: 40px;
+    top: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+}
+
+.input_box-PA{
+    top: 240px;
+    right: 10px;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    transition: .5s;
+}
+
+.input-PA{
+    width: 100% ;
+    height: 30px;
+    top: 100px;
+    padding: 10px 0;
+    margin:5px 0;
+    border-left:0;
+    border-right:0;
+    border-top:0;
+    border-bottom:1px solid #999;
+    outline: none;
+    background: transparent;
+ 
+}
+ 
+.RESET{
+    font-size: 17px;
+    width: 55%  ; 
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10%;
+    margin-inline: 20%;
+    background: linear-gradient(to right, #14a8ec, #a60aee);
+    border-radius: 30px;
+    
+    align-items: center;
+} 
+
+#PASS{
+    left: 190px ;
+}
