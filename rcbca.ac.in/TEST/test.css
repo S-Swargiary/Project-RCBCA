@@ -7,6 +7,8 @@
     font-family: "Poppins", sans-serif;
 
 }
+
+/*-------------------Main Body------------------------------- */
 body{
     display: flex;
     align-items: center;
@@ -15,6 +17,7 @@ body{
     background: #6990f2;
 }
 
+/*---------MAIN BOX---------- */
 .wrapper{
     width: 540px;
     padding: 30px;
@@ -27,7 +30,7 @@ body{
     font-weight: 30px 0;
     text-align: center;
 }
-
+/*-----------------File browsing box---------------- */
 .wrapper form{
     height: 167px;
     display: flex;
@@ -60,6 +63,68 @@ section .row{
     align-items: center;
     justify-content: space-between;
 }
+
 section .row i{
-    
+    font-size: 30px;
+    color: #6990f2;
+}
+
+section .details span{
+    font-size: 14px;
+    color: #6990f2;
+}
+
+/*-----------------File upload progress area--------------- */
+.progress-area .row .content{
+    width: 100%;
+    margin-left: 15px;
+}
+.progress-area .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------Pogress bar----- */
+.progress-area .progress-bar{
+    height: 6px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 30px;
+}
+.progress-bar .progress{
+    height: 100%;
+    width: 10%;
+    background: #6990f2;
+    border-radius: inherit;
+}
+
+
+/*-------------------------- Uploaded file area---------------------------- */
+.uploaded-area{
+    max-height: 150px ;
+    overflow-y: scroll ;
+}
+.uploaded-area::-webkit-scrollbar{
+    width: 0px;
+
+}
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+}
+.uploaded-area .row .details {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+.uploaded-area .fa-check{
+    font-size: 16ps;
+    color: #6990f2;
+}
+.uploaded-area .details .size{
+    font-size: 11px;
+    color: #404040;
+
+
 }
