@@ -280,7 +280,7 @@
 
  .head{
   
-  margin-left: 192.72px;
+  margin-left: 242px;
   margin-top: 80px;
 
   font-style: normal;
@@ -295,23 +295,23 @@
 .head2{
   
   font-style: normal;
-  margin-left: 248px;
-  margin-top: 13px;
+  margin-left: 295px;
+  margin-top: 25px;
 
 }
 
 .wrapper{
-  max-width: 540px;
+  max-width: 596px;
   
   background: #D3DAFC;
   border-radius: 50px;
-  margin-left: 180px;
-  margin-top: 50px;
+  margin-left: 200px;
+  margin-top: 100px;
 }
 
 /*-----------------File browsing box---------------- */
 .wrapper form{
-  height: 410px;
+  height: 486px;
   display: flex;
   margin: 30px 0;
   align-items: center;
@@ -321,3 +321,5 @@
   border: 2px dashed #000000;
 }
 
+
+/*-----------------OTION AND UPLOAD---------------- */
