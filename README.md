@@ -11,4 +11,4 @@ This repo is to develop a **website** for our department
 
 4. After your pull request get merged, **delete your branch**. This indicates that the work on the branch is complete and prevents you or others from accidentally using old branches.
 
-***Thanks for reading...***
+***Thanks for the contribution...***
